@@ -7,7 +7,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-"Plug 'tanvirtin/monokai.nvim'
+Plug 'tanvirtin/monokai.nvim'
 call plug#end()
 
 let g:plug_threads = 12 "12 for desktop
