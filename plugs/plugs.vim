@@ -10,6 +10,6 @@ Plug 'vim-airline/vim-airline-themes'
 "Plug 'tanvirtin/monokai.nvim'
 call plug#end()
 
-let g:plug_threads = 4
+let g:plug_threads = 4 "4 for laptop
 let g:plug_timeout = 60
 let g:plug_retries = 2

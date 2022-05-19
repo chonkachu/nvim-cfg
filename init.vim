@@ -3,6 +3,7 @@ source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/plugs/plugs.vim
 source $HOME/.config/nvim/modules/gruvbox.vim
 colorscheme gruvbox
+let g:gruvbox_italics=0
 "colorscheme monokai_soda
 source $HOME/.config/nvim/modules/airline.vim
 " tab for trigger completion

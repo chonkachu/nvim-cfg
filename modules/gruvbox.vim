@@ -1,4 +1,3 @@
-let g:gruvbox_italics=0
 
 if (empty($TMUX))
     if (has("nvim"))
