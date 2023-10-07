@@ -8,6 +8,9 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tanvirtin/monokai.nvim'
+Plug 'lervag/vimtex'
+Plug 'xiyaowong/transparent.nvim'
+Plug 'nvim-tree/nvim-tree.lua'
 call plug#end()
 
 let g:plug_threads = 12 "12 for desktop
