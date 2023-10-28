@@ -9,8 +9,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tanvirtin/monokai.nvim'
 Plug 'lervag/vimtex'
-Plug 'xiyaowong/transparent.nvim'
 Plug 'nvim-tree/nvim-tree.lua'
+Plug 'nvim-tree/nvim-web-devicons'
 call plug#end()
 
 let g:plug_threads = 12 "12 for desktop

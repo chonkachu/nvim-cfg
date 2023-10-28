@@ -45,5 +45,31 @@ endfunction
 
 let g:vimtex_view_method = 'zathura'
 let g:vimtex_view_forward_search_on_start = 0
-let g:loaded_netrw=1
-let g:loaded_netrwPlugin=1
+lua << EOF
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+vim.opt.termguicolors = true
+require("nvim-tree").setup({
+filters = {
+    dotfiles = true,
+},
+update_focused_file = {
+    enable = true,    
+},
+})
+vim.keymap.set("n", "<C-h>", ":NvimTreeToggle<cr>", {silent = true, noremap = true})
+vim.keymap.set("n", "<leader>b", ":b ", { desc = "pick a buffer" })
+vim.api.nvim_create_user_command('Run',
+    function(opts)
+    --vim.fn.expand('%')
+        local handle = io.popen("run -c " .. opts.fargs[1] .. " 1")
+        local result = handle:read("*a")
+        handle:close()
+        print(result)
+    end,
+    { nargs = 1 })
+--require("nvim-tree.api").tree.open()
+
+EOF
+
+let g:airline#extensions#tabline#buffer_nr_show = 1
