@@ -5,7 +5,8 @@ set encoding=utf-8
 set fileencoding=utf-8
 set cmdheight=2
 set pumheight=10
-set iskeyword+=-
+set iskeyword-=-
+set iskeyword-=_
 set mouse=a
 set splitbelow
 set splitright
@@ -19,7 +20,6 @@ set smartindent
 set autoindent
 set laststatus=0
 set number
-set background=dark
 set showtabline=2
 set noshowmode
 set nobackup
