@@ -17,6 +17,12 @@ function! Check_back_space() abort
 endfunction
 
 " Insert <tab> when previous text is space, refresh completion if not.
+"inoremap <silent><expr> <TAB>
+"    \ coc#pum#visible() ? coc#pum#next(1):
+"    \ Check_back_space() ? "\<Tab>" :
+"    \ coc#refresh()
+
+" for coc-snippets
 inoremap <silent><expr> <TAB>
     \ coc#pum#visible() ? coc#pum#next(1):
     \ Check_back_space() ? "\<Tab>" :
